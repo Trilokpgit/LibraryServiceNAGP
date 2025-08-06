@@ -2,13 +2,13 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
-COPY *.csproj ./
-RUN dotnet restore
+COPY Src/LibraryService/LibraryService/LibraryService.csproj ./Src/LibraryService/
+RUN dotnet restore ./Src/LibraryService/LibraryService.csproj
 
-COPY . ./
-RUN dotnet publish -c Release -o out
+COPY Src/LibraryService/LibraryService/ ./Src/LibraryService/
 
-# Use ASP.NET runtime image
+RUN dotnet publish ./Src/LibraryService/LibraryService.csproj -c Release -o /app/out
+
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 COPY --from=build /app/out ./
