@@ -105,7 +105,8 @@ Once deployed, the Service API can be accessed externally via the following URL.
         ```
 
 ## NOTE:
-The Dockerfile in the root directory is for reference only. The actual Dockerfile used to build the image is located inside the LibraryService directory.
+You can build the Docker image for this service using either the Dockerfile at the root of the repository or the one located inside the LibraryService/LibraryService directory. 
+Both are configured to build the image correctly.
 ---
 
 
