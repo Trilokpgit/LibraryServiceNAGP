@@ -5,19 +5,19 @@ This repository contains the source code, Dockerfile, and Kubernetes YAML config
 ## Code Repository
 
 You are currently viewing the code repository.
-**Repository URL:** `[https://github.com/Trilokpgit/LibraryServiceNAGP](https://github.com/Trilokpgit/LibraryServiceNAGP)`
+**Repository URL:** [https://github.com/Trilokpgit/LibraryServiceNAGP](https://github.com/Trilokpgit/LibraryServiceNAGP)
 
 ## Docker Hub Image
 
 Below is The Docker image for this Library Service API is hosted on Docker Hub.
 
-**Docker Hub URL:** `https://hub.docker.com/r/trilokp/libraryservice`
+**Docker Hub URL:** [https://hub.docker.com/r/trilokp/libraryservice](https://hub.docker.com/r/trilokp/libraryservice)
 
 ## Service API Endpoint
 
 Once deployed, the Service API can be accessed externally via the following URL. This endpoint will fetch and display records of Books from the PostgreSQL database.
 
-**Service API URL:** `http://34.71.8.0/api/library`
+**Service API URL:** [http://34.71.8.0/api/library](http://34.71.8.0/api/library)
 
 ## Setup and Deployment Instructions
 
