@@ -9,9 +9,9 @@ You are currently viewing the code repository.
 
 ## Docker Hub Image
 
-The Docker image for the .NET Core Service API is hosted on Docker Hub.
+Below is The Docker image for this Library Service API is hosted on Docker Hub.
 
-**Docker Hub URL:** `[https://hub.docker.com/r/trilokp/libraryservice](https://hub.docker.com/r/trilokp/libraryservice)`
+**Docker Hub URL:** `https://hub.docker.com/r/trilokp/libraryservice`
 
 ## Service API Endpoint
 
@@ -76,6 +76,7 @@ Once deployed, the Service API can be accessed externally via the following URL.
 ## Kubernetes Resources Used
 
 * `ConfigMap`: `app-config` - Stores non-sensitive database connection details.
+* `ConfigMap`: `init-sql` - Stores SQL script to initially seed the data.
 * `Secret`: `db-secret` - Securely stores the database password.
 * `Service (ClusterIP)`: `postgres` - Internal service discovery for PostgreSQL.
 * `StatefulSet`: `postgres` - Manages the single, stateful PostgreSQL database pod with persistence.
